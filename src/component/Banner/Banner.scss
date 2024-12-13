@@ -1,0 +1,26 @@
+/* Banner styling */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Chiều cao của banner */
+    overflow: hidden; /* Ẩn các phần ngoài vùng hiển thị */
+  }
+  
+  .banner-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease; /* Hiệu ứng mờ dần khi chuyển đổi hình ảnh */
+    opacity: 0;
+  }
+  
+  .banner-image.show {
+    opacity: 1;
+  }
+  
+  .banner-image.hide {
+    opacity: 0;
+  }
+  

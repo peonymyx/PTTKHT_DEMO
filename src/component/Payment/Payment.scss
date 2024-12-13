@@ -1,0 +1,183 @@
+// Các biến màu sắc và thiết lập chung
+$primary-color: #0494f0;
+$secondary-color: #bce7fe;
+$background-color: #f9f9f9;
+$border-radius: 8px;
+
+.payment-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: $background-color;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+
+  h2 {
+    text-align: center;
+    color: $primary-color;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .payment-step, .payment-method, .payment-options, .receipt, .payment-confirmation {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: white;
+    border-radius: $border-radius;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .payment-step p, .payment-summary {
+    font-size: 16px;
+    color: #333;
+  }
+
+  .payment-method h3, .payment-options h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: $primary-color;
+  }
+
+  .payment-method label, .payment-options label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #555;
+  }
+
+  .payment-method input, .payment-options input {
+    margin-right: 8px;
+  }
+
+  .installments-options {
+    margin-top: 15px;
+    label {
+      font-size: 16px;
+      color: #555;
+    }
+
+    select {
+      padding: 8px;
+      font-size: 16px;
+      margin-left: 10px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      width: 100px;
+    }
+  }
+
+  .payment-summary {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .payment-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    label {
+      width: 45%;
+      text-align: center;
+    }
+
+    input {
+      margin-right: 10px;
+    }
+  }
+
+  .payment-options label input {
+    display: inline-block;
+    width: auto;
+  }
+
+  .payment-summary h4 {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .receipt {
+    h3 {
+      font-size: 20px;
+      color: $primary-color;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    button {
+      background-color: $primary-color;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+  }
+
+  .payment-confirmation {
+    text-align: center;
+
+    h2 {
+      color: green;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+}
+
+// Responsive Styles
+@media (max-width: 768px) {
+  .payment-container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .payment-method label, .payment-options label {
+    font-size: 14px;
+  }
+
+  .installments-options select {
+    width: 80px;
+  }
+
+  .payment-summary h4, .payment-options h3 {
+    font-size: 16px;
+  }
+
+  .payment-options {
+    flex-direction: column;
+    align-items: flex-start;
+
+    label {
+      width: 100%;
+      text-align: left;
+    }
+  }
+}

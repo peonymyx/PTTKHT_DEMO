@@ -1,0 +1,155 @@
+.booking {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+.booking .form-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .booking .form-actions button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: #0494f0;
+    color: white;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .booking .form-actions button:hover {
+    background-color: #0078d4;
+  }
+  
+  .booking .form-actions button {
+    background-color: #bce7fe;
+  }
+  
+  .booking .form-actions button:hover {
+    background-color: #0494f0;
+  }
+  
+  .booking .form-actions button.button-disabled {
+    background-color: #d3d3d3; /* Màu nhạt cho nút disabled */
+    cursor: not-allowed;
+  }
+  
+  .booking .form-actions button:disabled {
+    cursor: not-allowed;
+  }
+  
+.service-selection,
+.doctor-selection,
+.date-selection,
+.time-selection {
+  margin-bottom: 20px;
+}
+
+.service-list,
+.doctor-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-item,
+.doctor-item,
+.time-item {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #bce7fe;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+.service-item:hover,
+.doctor-item:hover,
+.time-item:hover {
+  background-color: #0494f0;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-header {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-day-name {
+  text-align: center;
+  font-weight: bold;
+}
+
+.calendar-day {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.calendar-day.empty {
+  background-color: transparent;
+}
+
+.calendar-day:hover {
+  background-color: #0494f0;
+  color: white;
+}
+
+.date-picker {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #bce7fe;
+  border-radius: 4px;
+}
+
+.date-picker:hover {
+  background-color: #0494f0;
+  color: white;
+}
+.time-selection {
+  margin-bottom: 20px;
+}
+
+.time-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.time-item {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #bce7fe;
+  margin: 5px;
+  border-radius: 4px;
+  text-align: center;
+  width: 100px; /* Điều chỉnh kích thước theo ý muốn */
+}
+
+.time-item:hover {
+  background-color: #0494f0;
+  color: white;
+}
+
+.time-item.selected {
+  background-color: #0494f0; /* Màu nền khi chọn */
+  color: white; /* Màu chữ khi chọn */
+}
+
+.no-slots {
+  color: #ff0000;
+  text-align: center;
+  margin-top: 10px;
+}

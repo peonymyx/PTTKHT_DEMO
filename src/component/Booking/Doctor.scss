@@ -1,0 +1,58 @@
+.doctor-selection {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .doctor-selection label {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .doctor-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .doctor-item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .doctor-item:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+  }
+  
+  .doctor-name {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .doctor-info {
+    font-size: 0.9em;
+    color: #777;
+  }
+  
+  .doctor-info span {
+    color: #0494f0; /* Màu xanh để làm nổi bật thông tin */
+  }
+  
+  .doctor-info span:first-child {
+    font-weight: bold;
+  }
+  

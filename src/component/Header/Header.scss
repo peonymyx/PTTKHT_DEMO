@@ -1,0 +1,182 @@
+header {
+  display: flex; /* Sử dụng flexbox để dàn các phần tử ngang */
+  justify-content: space-between; /* Chia đều khoảng cách giữa các phần tử */
+  align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+  padding: 10px 20px; /* Khoảng cách xung quanh header */ /* Màu nền của header */
+  color: #0494f0;
+}
+
+.contact-info-container {
+  background-color: #0494f0; /* Màu nền */
+  padding: 20px 0;
+  width: 100%; /* Chiếm toàn bộ chiều rộng */
+  position: relative;
+  overflow: hidden; /* Ẩn phần vượt ra ngoài */
+}
+
+.contact-info-wrapper {
+  display: flex;
+  position: absolute;
+  white-space: nowrap;
+  animation: scrollingText 15s linear infinite;
+}
+
+.contact-info {
+  color: white; /* Màu chữ */
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  padding-right: 50px; /* Khoảng cách giữa các chữ */
+}
+
+@keyframes scrollingText {
+  0% {
+    transform: translateX(100%); /* Bắt đầu từ ngoài màn hình bên phải */
+  }
+  100% {
+    transform: translateX(-100%); /* Kết thúc ra ngoài màn hình bên trái */
+  }
+}
+.header-search {
+  display: flex; /* Đảm bảo biểu tượng và input nằm ngang */
+  align-items: center;
+  position: relative;
+  width: 300px; /* Điều chỉnh chiều rộng của input */
+}
+
+.header-search input {
+  width: 100%;
+  padding: 8px 10px 8px 30px; /* Thêm padding bên trái để dành chỗ cho icon */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  background-color: #bce7fe; /* Màu nền cho input */
+}
+
+.header-search i {
+  margin-right: 10px;
+  position: absolute;
+  left: 10px; /* Căn icon vào bên trái của ô input */
+  top: 50%;
+  transform: translateY(-50%); /* Căn giữa theo chiều dọc */
+  font-size: 18px;
+  color: #888;
+  pointer-events: none; /* Chặn sự kiện click vào icon */
+}
+.header-phone {
+  display: flex; /* Dùng flexbox để căn chỉnh theo chiều ngang */
+  align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+  font-size: 32px;
+}
+
+.header-phone-icon {
+  margin-right: 10px; /* Khoảng cách giữa biểu tượng và số điện thoại */
+  font-size: 32px; /* Đặt kích thước cho icon */
+  color: #888; /* Đặt màu cho icon */
+}
+
+/* Phần tử button trong header-user */
+.header-user button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0277b5;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Căn giữa biểu tượng và text trong nút */
+  transition: background-color 0.3s ease;
+}
+
+/* Khi hover nút */
+.header-user button:hover {
+  background-color: #026495; /* Màu nền khi hover */
+}
+
+/* Khoảng cách giữa icon và text trong button */
+.header-user button i {
+  margin-right: 5px;
+}
+
+/* Các hiệu ứng cho icon người dùng */
+.header-user button i {
+  font-size: 18px; /* Điều chỉnh kích thước của icon */
+}
+
+/* Căn chỉnh container nếu cần */
+.header-user {
+  display: flex;
+  justify-content: center;
+}
+.header-user-logined {
+  display: flex;
+  align-items: center;
+  color: #0494f0;
+  padding: 8px 16px;
+
+  i {
+    margin-right: 12px;
+    font-size: 18px;
+    color: #0494f0;;
+    cursor: pointer;
+  }
+
+  .fa-message,
+  .fa-bell {
+    margin-right: 12px;
+  }
+
+  .fa-message:hover,
+  .fa-bell:hover {
+    color: #026495;
+  }
+}
+.header-user-name {
+    position: relative; /* Để đảm bảo ul dropdown được căn đúng vị trí */
+    cursor: pointer; /* Thêm con trỏ chuột để biết người dùng có thể tương tác */
+    color: #0494f0; /* Giữ màu sắc của tên người dùng */
+    a {
+        text-decoration: none;
+    }
+    /* Khi hover vào .header-user-name */
+    &:hover {
+      color: #0277b5; /* Màu sắc khi hover vào tên người dùng (nếu cần thay đổi) */
+    }
+  
+    /* Dropdown menu */
+    .dropdown-menu {
+      display: none; /* Ẩn menu dropdown mặc định */
+      position: absolute; /* Đặt dropdown ở vị trí tuyệt đối so với .header-user-name */
+      top: 100%; /* Đặt menu dropdown ngay dưới phần tử cha */
+      left: 0;
+      background-color: #fff; /* Màu nền cho menu */
+      border: 1px solid #ccc; /* Đường viền cho menu */
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      min-width: 150px; /* Chiều rộng tối thiểu của dropdown */
+      z-index: 1000; /* Đảm bảo dropdown nổi lên trên các phần tử khác */
+    }
+  
+    /* Hiển thị dropdown khi hover vào .header-user-name */
+    &:hover .dropdown-menu {
+      display: block; /* Hiển thị menu khi hover */
+    }
+  
+    /* Các item trong dropdown */
+    .dropdown-menu li {
+      padding: 10px 15px;
+      list-style: none; /* Bỏ dấu chấm trước mỗi item */
+    }
+  
+    /* Màu sắc cho các item trong dropdown khi hover */
+    .dropdown-menu li:hover {
+      background-color: #f5f5f5; /* Màu nền khi hover vào item */
+    }
+  
+    .dropdown-menu a {
+      text-decoration: none; /* Bỏ gạch chân */
+      color: #333; /* Màu chữ cho item */
+      display: block; /* Đảm bảo các item chiếm toàn bộ chiều rộng của dropdown */
+    }
+  }
+  
