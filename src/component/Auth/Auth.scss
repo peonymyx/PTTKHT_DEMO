@@ -41,11 +41,11 @@ form {
   border-radius: 5px;
 }
 
-button {
+.btn-submit {
   width: 100%;
   padding: 12px;
   font-size: 16px;
-  background-color: #0494F0;
+  background-color: #bb853f;
   color: white;
   border: none;
   border-radius: 5px;
@@ -53,8 +53,8 @@ button {
   transition: background-color 0.3s;
 }
 
-button:hover {
-  background-color: #0270C8;
+.btn-submit:hover {
+  background-color: #906c3e;
 }
 
 .error {

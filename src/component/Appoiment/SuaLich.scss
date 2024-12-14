@@ -9,7 +9,7 @@
   
     h2 {
       text-align: center;
-      color: #0494F0;
+      color: #bb853f;
       margin-bottom: 30px;
       font-size: 24px;
     }
@@ -36,7 +36,7 @@
   
       select:focus,
       input[type="radio"]:checked {
-        border-color: #0494F0;
+        border-color: #bb853f;
       }
   
       select {
@@ -58,7 +58,7 @@
     }
   
     .btn-save {
-      background-color: #0494F0;
+      background-color: #bb853f;
       color: white;
       padding: 12px 20px;
       border: none;
@@ -69,7 +69,7 @@
       transition: background-color 0.3s;
   
       &:hover {
-        background-color: #036bc0;
+        background-color: #9b723c;
       }
     }
   
@@ -108,7 +108,7 @@
       }
   
       input[type="radio"]:checked + span {
-        background-color: #0494F0;
+        background-color: #bb853f;
         color: white;
       }
     }

@@ -37,7 +37,7 @@ export default function Login() {
               required
             />
           </div>
-          <button type="submit">Đăng nhập</button>
+          <button type="submit" className="btn-submit">Đăng nhập</button>
         </form>
         <p>
         Chưa có tài khoản?{" "}

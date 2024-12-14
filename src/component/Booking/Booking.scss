@@ -12,22 +12,22 @@
     padding: 8px 16px;
     font-size: 14px;
     border-radius: 4px;
-    background-color: #0494f0;
+    background-color: #bb853f;
     color: white;
     cursor: pointer;
     border: none;
   }
   
   .booking .form-actions button:hover {
-    background-color: #0078d4;
+    background-color: #bb853f;
   }
   
   .booking .form-actions button {
-    background-color: #bce7fe;
+    background-color: #f0dfcd;
   }
   
   .booking .form-actions button:hover {
-    background-color: #0494f0;
+    background-color: #bb853f;
   }
   
   .booking .form-actions button.button-disabled {
@@ -57,7 +57,7 @@
 .time-item {
   cursor: pointer;
   padding: 10px;
-  background-color: #bce7fe;
+  background-color: #f0dfcd;
   margin: 5px;
   border-radius: 4px;
 }
@@ -65,7 +65,7 @@
 .service-item:hover,
 .doctor-item:hover,
 .time-item:hover {
-  background-color: #0494f0;
+  background-color: #bb853f;
 }
 
 .calendar {
@@ -104,19 +104,19 @@
 }
 
 .calendar-day:hover {
-  background-color: #0494f0;
+  background-color: #bb853f;
   color: white;
 }
 
 .date-picker {
   cursor: pointer;
   padding: 10px;
-  background-color: #bce7fe;
+  background-color: #f0dfcd;
   border-radius: 4px;
 }
 
 .date-picker:hover {
-  background-color: #0494f0;
+  background-color: #bb853f;
   color: white;
 }
 .time-selection {
@@ -131,7 +131,7 @@
 .time-item {
   cursor: pointer;
   padding: 10px;
-  background-color: #bce7fe;
+  background-color: #f0dfcd;
   margin: 5px;
   border-radius: 4px;
   text-align: center;
@@ -139,12 +139,12 @@
 }
 
 .time-item:hover {
-  background-color: #0494f0;
+  background-color: #bb853f;
   color: white;
 }
 
 .time-item.selected {
-  background-color: #0494f0; /* Màu nền khi chọn */
+  background-color: #bb853f; /* Màu nền khi chọn */
   color: white; /* Màu chữ khi chọn */
 }
 

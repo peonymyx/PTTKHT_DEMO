@@ -3,11 +3,11 @@ header {
   justify-content: space-between; /* Chia đều khoảng cách giữa các phần tử */
   align-items: center; /* Căn giữa các phần tử theo chiều dọc */
   padding: 10px 20px; /* Khoảng cách xung quanh header */ /* Màu nền của header */
-  color: #0494f0;
+  color: #bb853f;
 }
 
 .contact-info-container {
-  background-color: #0494f0; /* Màu nền */
+  background-color: #f0dfcd; /* Màu nền */
   padding: 20px 0;
   width: 100%; /* Chiếm toàn bộ chiều rộng */
   position: relative;
@@ -22,7 +22,7 @@ header {
 }
 
 .contact-info {
-  color: white; /* Màu chữ */
+  color: #bb853f; /* Màu chữ */
   font-size: 16px;
   font-family: Arial, sans-serif;
   padding-right: 50px; /* Khoảng cách giữa các chữ */
@@ -49,7 +49,7 @@ header {
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 25px;
-  background-color: #bce7fe; /* Màu nền cho input */
+  background-color: #f0dfcd; /* Màu nền cho input */
 }
 
 .header-search i {
@@ -78,7 +78,7 @@ header {
 .header-user button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #0277b5;
+  background-color: #bb853f;
   color: white;
   border: none;
   border-radius: 25px;
@@ -90,7 +90,7 @@ header {
 
 /* Khi hover nút */
 .header-user button:hover {
-  background-color: #026495; /* Màu nền khi hover */
+  background-color: #a67e48; /* Màu nền khi hover */
 }
 
 /* Khoảng cách giữa icon và text trong button */
@@ -111,13 +111,13 @@ header {
 .header-user-logined {
   display: flex;
   align-items: center;
-  color: #0494f0;
+  color: #bb853f;
   padding: 8px 16px;
 
   i {
     margin-right: 12px;
     font-size: 18px;
-    color: #0494f0;;
+    color: #bb853f;
     cursor: pointer;
   }
 
@@ -128,19 +128,21 @@ header {
 
   .fa-message:hover,
   .fa-bell:hover {
-    color: #026495;
+    color: #a3773e;
   }
 }
 .header-user-name {
     position: relative; /* Để đảm bảo ul dropdown được căn đúng vị trí */
     cursor: pointer; /* Thêm con trỏ chuột để biết người dùng có thể tương tác */
-    color: #0494f0; /* Giữ màu sắc của tên người dùng */
+    color: #bb853f; /* Giữ màu sắc của tên người dùng */
     a {
         text-decoration: none;
+        color: #bb853f;
+        
     }
     /* Khi hover vào .header-user-name */
     &:hover {
-      color: #0277b5; /* Màu sắc khi hover vào tên người dùng (nếu cần thay đổi) */
+      color: #bb853f; /* Màu sắc khi hover vào tên người dùng (nếu cần thay đổi) */
     }
   
     /* Dropdown menu */

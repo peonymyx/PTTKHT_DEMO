@@ -162,7 +162,7 @@ export default function Register() {
           />
         </div>
 
-        <button type="submit">Đăng ký</button>
+        <button type="submit" className="btn-submit">Đăng ký</button>
       </form>
       <p>
         Đã có tài khoản?{" "}

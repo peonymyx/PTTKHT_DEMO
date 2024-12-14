@@ -29,11 +29,14 @@ const LichHen = () => {
   };
 
   const handleDelete = (appointmentId) => {
-    const updatedAppointments = appointments.filter(
-      (appointment) => appointment.id !== appointmentId
-    );
-    setAppointments(updatedAppointments);
-    localStorage.setItem("appointments", JSON.stringify(updatedAppointments));
+    const isConfirmed = window.confirm("Bạn có chắc chắn muốn xóa cuộc hẹn này không?");
+    if (isConfirmed) {
+      const updatedAppointments = appointments.filter(
+        (appointment) => appointment.id !== appointmentId
+      );
+      setAppointments(updatedAppointments);
+      localStorage.setItem("appointments", JSON.stringify(updatedAppointments));
+    }
   };
 
   if (appointments.length === 0) {

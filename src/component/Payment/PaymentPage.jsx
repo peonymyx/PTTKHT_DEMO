@@ -114,7 +114,7 @@ const PaymentPage = () => {
         {paymentMethod === "installments" && <p>Số tiền trả góp mỗi tháng: {formatCurrency(installmentAmount)}</p>}
       </div>
 
-      <button onClick={handlePaymentSubmit}>Thanh toán</button>
+      <button className="submit" onClick={handlePaymentSubmit}>Thanh toán</button>
     </div>
   );
 };

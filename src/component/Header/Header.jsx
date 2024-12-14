@@ -57,7 +57,7 @@ export default function Header() {
                     <a href="/rang-su-tham-my/loai-1">Profile</a>
                   </li>
                   <li>
-                    <a onClick={handleLogout}>Đăng Xuất</a>
+                    <a onClick={handleLogout} href="/">Đăng Xuất</a>
                   </li>
                 </ul>
               </div>
